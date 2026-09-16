@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1190.5511811023623" height="841.8897637795277" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1190 841" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1190.5511811023623" height="841.8897637795277"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-841)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="809.8897637795277" width="1190.5511811023623" height="8.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+			<text x="40" y="774.8897637795277" style="font-family: Helvetica-Bold; font-size: 23px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,1549) scale(1,-1)">Chen attributes</text>
+			<text x="40" y="752.8897637795277" style="font-family: Helvetica; font-size: 11px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,1505) scale(1,-1)">Sheet 2: all non-FK fields in the sample schema. Underlined IDs are primary keys. Sheet 1 relationships become the foreign keys.</text>
+			<path d="M 40,38 L 1150.551181,38 Z" style="stroke: rgb(32%,41%,42%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<text x="40" y="23" style="font-family: Helvetica; font-size: 9px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,46) scale(1,-1)">COSC 457 | Proposed design - confirm against the interview</text>
+			<text x="1133.0371811023624" y="23" style="font-family: Helvetica; font-size: 9px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,46) scale(1,-1)">2 / 4</text>
+			<path d="M 158,652 L 144,687 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="83.0" cy="687.0" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="60.1268" y="684.0" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,1368) scale(1,-1)">customer_id</text>
+			<path d="M 60.1268,682 L 105.8732,682 Z" style="stroke: rgb(13%,23%,26%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 256,652 L 270,669.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="331.0" cy="669.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="320.4958" y="666.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,1333) scale(1,-1)">name</text>
+			<path d="M 158,652 L 144,652 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="83.0" cy="652.0" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="71.324" y="649.0" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,1298) scale(1,-1)">phone</text>
+			<path d="M 256,652 L 270,634.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="331.0" cy="634.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="320.9662" y="631.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,1263) scale(1,-1)">email</text>
+			<path d="M 158,652 L 144,617 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="83.0" cy="617.0" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="72.0296" y="614.0" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,1228) scale(1,-1)">active</text>
+			<rect x="158" y="634" width="98" height="36" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,95%); fill-rule: evenodd;"/>
+			<text x="187.87075" y="649" style="font-family: Helvetica-Bold; font-size: 8.5px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,1298) scale(1,-1)">customer</text>
+			<path d="M 546,652 L 532,687 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="471.0" cy="687.0" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="452.3268" y="684.0" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,1368) scale(1,-1)">vehicle_id</text>
+			<path d="M 452.3268,682 L 489.6732,682 Z" style="stroke: rgb(13%,23%,26%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 644,652 L 658,669.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="719.0" cy="669.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="713.6324" y="666.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,1333) scale(1,-1)">vin</text>
+			<path d="M 546,652 L 532,652 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="471.0" cy="652.0" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="449.0592" y="649.0" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,1298) scale(1,-1)">model_year</text>
+			<path d="M 644,652 L 658,634.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="719.0" cy="634.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="708.731" y="631.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,1263) scale(1,-1)">make</text>
+			<path d="M 546,652 L 532,617 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="471.0" cy="617.0" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="459.5634" y="614.0" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,1228) scale(1,-1)">model</text>
+			<rect x="546" y="634" width="98" height="36" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,95%); fill-rule: evenodd;"/>
+			<text x="580.58825" y="649" style="font-family: Helvetica-Bold; font-size: 8.5px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,1298) scale(1,-1)">vehicle</text>
+			<path d="M 934,652 L 920,704.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="859.0" cy="704.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="843.5944" y="701.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,1403) scale(1,-1)">order_id</text>
+			<path d="M 843.5944,699.5 L 874.4056,699.5 Z" style="stroke: rgb(13%,23%,26%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 1032,652 L 1046,687 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="1107.0" cy="687.0" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="1087.1508" y="684.0" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,1368) scale(1,-1)">opened_at</text>
+			<path d="M 934,652 L 920,669.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="859.0" cy="669.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="841.0282" y="666.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,1333) scale(1,-1)">complaint</text>
+			<path d="M 1032,652 L 1046,652 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="1107.0" cy="652.0" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="1089.2592" y="649.0" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,1298) scale(1,-1)">diagnosis</text>
+			<path d="M 934,652 L 920,634.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="859.0" cy="634.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="841.2592" y="631.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,1263) scale(1,-1)">odometer</text>
+			<path d="M 1032,652 L 1046,617 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="1107.0" cy="617.0" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="1095.7944" y="614.0" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,1228) scale(1,-1)">status</text>
+			<path d="M 934,652 L 920,599.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="859.0" cy="599.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="824.4466" y="596.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,1193) scale(1,-1)">authorization_note</text>
+			<rect x="934" y="634" width="98" height="36" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,95%); fill-rule: evenodd;"/>
+			<text x="957.96325" y="649" style="font-family: Helvetica-Bold; font-size: 8.5px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,1298) scale(1,-1)">repair_order</text>
+			<path d="M 158,480 L 144,497.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="83.0" cy="497.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="59.1902" y="494.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,989) scale(1,-1)">employee_id</text>
+			<path d="M 59.1902,492.5 L 106.8098,492.5 Z" style="stroke: rgb(13%,23%,26%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 256,480 L 270,497.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="331.0" cy="497.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="320.4958" y="494.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,989) scale(1,-1)">name</text>
+			<path d="M 158,480 L 144,462.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="83.0" cy="462.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="75.9986" y="459.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,919) scale(1,-1)">role</text>
+			<path d="M 256,480 L 270,462.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="331.0" cy="462.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="320.0296" y="459.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,919) scale(1,-1)">active</text>
+			<rect x="158" y="462" width="98" height="36" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,95%); fill-rule: evenodd;"/>
+			<text x="187.39475" y="477" style="font-family: Helvetica-Bold; font-size: 8.5px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,954) scale(1,-1)">employee</text>
+			<path d="M 546,480 L 532,497.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="471.0" cy="497.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="452.0958" y="494.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,989) scale(1,-1)">service_id</text>
+			<path d="M 452.0958,492.5 L 489.9042,492.5 Z" style="stroke: rgb(13%,23%,26%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 644,480 L 658,497.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="719.0" cy="497.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="708.4958" y="494.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,989) scale(1,-1)">name</text>
+			<path d="M 546,480 L 532,462.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="471.0" cy="462.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="451.3902" y="459.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,919) scale(1,-1)">rate_cents</text>
+			<path d="M 644,480 L 658,462.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="719.0" cy="462.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="708.0296" y="459.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,919) scale(1,-1)">active</text>
+			<rect x="546" y="462" width="98" height="36" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,95%); fill-rule: evenodd;"/>
+			<text x="580.35025" y="477" style="font-family: Helvetica-Bold; font-size: 8.5px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,954) scale(1,-1)">service</text>
+			<path d="M 934,480 L 920,497.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="859.0" cy="497.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="835.1902" y="494.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,989) scale(1,-1)">labor_line_id</text>
+			<path d="M 835.1902,492.5 L 882.8098,492.5 Z" style="stroke: rgb(13%,23%,26%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 1032,480 L 1046,497.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="1107.0" cy="497.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="1086.693" y="494.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,989) scale(1,-1)">description</text>
+			<path d="M 934,480 L 920,462.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="859.0" cy="462.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="825.148" y="459.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,919) scale(1,-1)">hours_hundredths</text>
+			<path d="M 1032,480 L 1046,462.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="1107.0" cy="462.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="1087.3902" y="459.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,919) scale(1,-1)">rate_cents</text>
+			<rect x="934" y="462" width="98" height="36" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,95%); fill-rule: evenodd;"/>
+			<text x="962.923" y="477" style="font-family: Helvetica-Bold; font-size: 8.5px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,954) scale(1,-1)">labor_line</text>
+			<path d="M 158,308 L 144,343 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="83.0" cy="343.0" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="70.1606" y="340.0" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,680) scale(1,-1)">part_id</text>
+			<path d="M 70.1606,338 L 95.8394,338 Z" style="stroke: rgb(13%,23%,26%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 256,308 L 270,343 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="331.0" cy="343.0" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="307.1902" y="340.0" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,680) scale(1,-1)">part_number</text>
+			<path d="M 158,308 L 144,308 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="83.0" cy="308.0" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="72.4958" y="305.0" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,610) scale(1,-1)">name</text>
+			<path d="M 256,308 L 270,308 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="331.0" cy="308.0" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="309.5254" y="305.0" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,610) scale(1,-1)">price_cents</text>
+			<path d="M 158,308 L 144,273 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="83.0" cy="273.0" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="58.492999999999995" y="270.0" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,540) scale(1,-1)">reorder_level</text>
+			<path d="M 256,308 L 270,273 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="331.0" cy="273.0" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="320.0296" y="270.0" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,540) scale(1,-1)">active</text>
+			<rect x="158" y="290" width="98" height="36" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,95%); fill-rule: evenodd;"/>
+			<text x="198.97175" y="305" style="font-family: Helvetica-Bold; font-size: 8.5px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,610) scale(1,-1)">part</text>
+			<path d="M 546,308 L 532,325.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="471.0" cy="325.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="449.2902" y="322.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,645) scale(1,-1)">part_line_id</text>
+			<path d="M 449.2902,320.5 L 492.7098,320.5 Z" style="stroke: rgb(13%,23%,26%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 644,308 L 658,325.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="719.0" cy="325.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="698.693" y="322.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,645) scale(1,-1)">description</text>
+			<path d="M 546,308 L 532,290.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="471.0" cy="290.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="456.2916" y="287.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,575) scale(1,-1)">quantity</text>
+			<path d="M 644,308 L 658,290.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="719.0" cy="290.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="688.4198" y="287.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,575) scale(1,-1)">unit_price_cents</text>
+			<rect x="546" y="290" width="98" height="36" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,95%); fill-rule: evenodd;"/>
+			<text x="577.286" y="305" style="font-family: Helvetica-Bold; font-size: 8.5px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,610) scale(1,-1)">part_line</text>
+			<path d="M 934,308 L 920,325.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="859.0" cy="325.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="833.7916" y="322.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,645) scale(1,-1)">movement_id</text>
+			<path d="M 833.7916,320.5 L 884.2084,320.5 Z" style="stroke: rgb(13%,23%,26%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 1032,308 L 1046,325.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="1107.0" cy="325.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="1080.8508" y="322.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,645) scale(1,-1)">quantity_delta</text>
+			<path d="M 934,308 L 920,290.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="859.0" cy="290.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="846.1606" y="287.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,575) scale(1,-1)">reason</text>
+			<path d="M 1032,308 L 1046,290.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="1107.0" cy="290.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="1087.155" y="287.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,575) scale(1,-1)">created_at</text>
+			<rect x="934" y="290" width="98" height="36" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,95%); fill-rule: evenodd;"/>
+			<text x="940.2535" y="305" style="font-family: Helvetica-Bold; font-size: 8.5px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,610) scale(1,-1)">inventory_movement</text>
+			<path d="M 158,136 L 144,188.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="83.0" cy="188.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="64.32679999999999" y="185.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,371) scale(1,-1)">invoice_id</text>
+			<path d="M 64.3268,183.5 L 101.6732,183.5 Z" style="stroke: rgb(13%,23%,26%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 256,136 L 270,171 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="331.0" cy="171.0" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="313.024" y="168.0" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,336) scale(1,-1)">issued_at</text>
+			<path d="M 158,136 L 144,153.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="83.0" cy="153.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="54.524" y="150.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,301) scale(1,-1)">customer_label</text>
+			<path d="M 256,136 L 270,136 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="331.0" cy="136.0" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="306.724" y="133.0" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,266) scale(1,-1)">vehicle_label</text>
+			<path d="M 158,136 L 144,118.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="83.0" cy="118.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="61.2902" y="115.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,231) scale(1,-1)">labor_cents</text>
+			<path d="M 256,136 L 270,101 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="331.0" cy="101.0" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="309.2902" y="98.0" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,196) scale(1,-1)">parts_cents</text>
+			<path d="M 158,136 L 144,83.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="83.0" cy="83.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="65.024" y="80.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,161) scale(1,-1)">tax_cents</text>
+			<rect x="158" y="118" width="98" height="36" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,95%); fill-rule: evenodd;"/>
+			<text x="192.3545" y="133" style="font-family: Helvetica-Bold; font-size: 8.5px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,266) scale(1,-1)">invoice</text>
+			<path d="M 546,136 L 532,171 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="471.0" cy="171.0" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="449.2902" y="168.0" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,336) scale(1,-1)">payment_id</text>
+			<path d="M 449.2902,166 L 492.7098,166 Z" style="stroke: rgb(13%,23%,26%); stroke-linecap: butt; stroke-width: 0.6;"/>
+			<path d="M 644,136 L 658,153.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="719.0" cy="153.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="705.224" y="150.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,301) scale(1,-1)">paid_at</text>
+			<path d="M 546,136 L 532,136 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="471.0" cy="136.0" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="444.6198" y="133.0" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,266) scale(1,-1)">amount_cents</text>
+			<path d="M 644,136 L 658,118.5 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="719.0" cy="118.5" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="704.993" y="115.5" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,231) scale(1,-1)">method</text>
+			<path d="M 546,136 L 532,101 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<ellipse cx="471.0" cy="101.0" rx="61.0" ry="13.0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="448.1226" y="98.0" style="font-family: Helvetica; font-size: 8.4px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,196) scale(1,-1)">request_key</text>
+			<rect x="546" y="118" width="98" height="36" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,95%); fill-rule: evenodd;"/>
+			<text x="577.524" y="133" style="font-family: Helvetica-Bold; font-size: 8.5px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,266) scale(1,-1)">payment</text>
+			<text x="40" y="52" style="font-family: Helvetica; font-size: 10px;fill: rgb(13%,23%,26%); stroke:none;" transform="translate(0,104) scale(1,-1)">Stock and outstanding balance are calculated views, not extra entities. Fields on this sheet map one-for-one to the schema on pages 3-4.</text>
+		</g>
+	</g>
+</svg>
