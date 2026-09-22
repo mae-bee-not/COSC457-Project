@@ -1,6 +1,6 @@
 # Run and use the sample app
 
-Python 3.10+ and SQLite; no extra Python packages. Use fictional records. Confirm that the instructor accepts these tools before using this as the final implementation.
+Python 3.10+ and SQLite; no extra Python packages. Use fictional records.
 
 ## Start
 
@@ -10,9 +10,12 @@ Open a terminal in the **App** folder and run:
 python3 prototype/app.py
 ```
 
-On Windows, try `py -3 prototype/app.py`. On Mac, `Run_Prototype.command` is a shortcut.
+On Windows, try `py -3 prototype/app.py`.  
+On Mac, `Run_Prototype.command` is a shortcut.
 
-Open **http://127.0.0.1:8765** in a browser. Leave the terminal running; stop with **Ctrl+C**. Changes are saved in `prototype/demo.sqlite3`.
+Open **http://127.0.0.1:8765** in a browser.  
+Leave the terminal running; stop with **Ctrl+C**.  
+Changes are saved in `prototype/demo.sqlite3`.
 
 For a fresh practice database, use an unused filename:
 
@@ -20,20 +23,20 @@ For a fresh practice database, use an unused filename:
 python3 prototype/app.py --db practice-01.sqlite3
 ```
 
-If the port is busy, add `--port 8766` and open **http://127.0.0.1:8766**. If a form says its token is invalid after restarting, reload the page. Otherwise post the exact error in the group chat.
+If the port is busy, add `--port 8766` and open **http://127.0.0.1:8766**. If a form says its token is invalid after restarting, reload the page.
 
 ## What each screen does
 
-| Screen | Use |
-| --- | --- |
-| Overview | Open jobs, amount owed, low-stock count and a link to the example repair. |
-| Customers | Add, search or edit contact details. Set Active to Inactive to archive. |
-| Vehicles | Add, search or edit cars and their current customer. VIN must be unique. Changing ownership keeps old bills tied to their original customer. |
-| Employees and Services | Maintain staff and hourly labor types/rates. Only active mechanics can be assigned to work. Archive with Active = Inactive. |
-| Parts & stock | Maintain parts/prices. Receive or adjust whole-unit stock with a signed quantity and reason. Stock cannot go negative. Archive parts with Active = Inactive. |
-| Repair orders | Create a visit, record diagnosis/authorization, add labor and parts. Remove/re-add draft lines to correct them. Cancelling an unbilled job returns its parts. |
+| Screen                               | Use                                                                                                                                                                                                   |
+| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Overview                             | Open jobs, amount owed, low-stock count and a link to the example repair.                                                                                                                             |
+| Customers                            | Add, search or edit contact details. Set Active to Inactive to archive.                                                                                                                               |
+| Vehicles                             | Add, search or edit cars and their current customer. VIN must be unique. Changing ownership keeps old bills tied to their original customer.                                                          |
+| Employees and Services               | Maintain staff and hourly labor types/rates. Only active mechanics can be assigned to work. Archive with Active = Inactive.                                                                           |
+| Parts & stock                        | Maintain parts/prices. Receive or adjust whole-unit stock with a signed quantity and reason. Stock cannot go negative. Archive parts with Active = Inactive.                                          |
+| Repair orders                        | Create a visit, record diagnosis/authorization, add labor and parts. Remove/re-add draft lines to correct them. Cancelling an unbilled job returns its parts.                                         |
 | Invoice and payment, within a repair | Issue a bill, then record full or partial payments. Issuing locks the bill and job. Tax is a manually entered demo amount; payments cannot exceed the balance. Use browser Print if a copy is needed. |
-| Reports | Vehicle history, open work and unpaid invoices. Filter results by text, such as VIN. Money is displayed in dollars. |
+| Reports                              | Vehicle history, open work and unpaid invoices. Filter results by text, such as VIN. Money is displayed in dollars.                                                                                   |
 
 ## One demo to practice
 

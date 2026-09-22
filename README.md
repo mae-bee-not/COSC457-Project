@@ -3,18 +3,18 @@
 Use the three files in **Report**. The app is already built as a starting point. 
 Check it against the interview and the required course software.
 
-Report 1 Due: ______  Final Due: ______  Required Software: ______
+Report 1 Due: **Oct. 6th**  Final Due: **Dec. 1st**
 
 ## Pick a job
 
-| Person | What to hand in |
-| --- | --- |
-| **Interview Manager** | Do the interview, get the signature, and fill report sections 1-4 from the answers. |
-| **Database Manager** | Check the diagram and schema against the answers. Fix any differences; help connect/test billing and queries. |
-| **Application Manager** | Run the sample, provide 2-3 screenshots, and fix anything needed for the agreed workflow/software. |
-| **Report Manager** | Combine the pieces, fill dates and the real contribution log, check the required sections, and submit. For the final, collect the manual and slides. |
+| Person | What to hand in | Person Assigned |
+| --- | --- | --- |
+| **Interview Manager** | Do the interview, get the signature, and fill report sections 1-4 from the answers. | Mae Beeman
+| **Database Manager** | Check the diagram and schema against the answers. Fix any differences; help connect/test billing and queries. | tbd
+| **Application Manager** | Run the sample, provide 2-3 screenshots, and fix anything needed for the agreed workflow/software. | tbd
+| **Report Manager** | Combine the pieces, fill dates and the real contribution log, check the required sections, and submit. For the final, collect the manual and slides. | tbd
 
-Post your role and handoff date in the group chat. Everyone checks their own section and explains their part in the presentation.
+Pick a role. Everyone checks their own section and explains their part in the presentation.
 
 ## Finish Report 1
 
@@ -28,6 +28,6 @@ Post your role and handoff date in the group chat. Everyone checks their own sec
 
 One complete example: customer + vehicle → repair → labor/parts → invoice → payment. Three reports: vehicle history, open work, unpaid invoices. Check bad input and that saved data survives a restart.
 
-Use the app README as the starting functional guide and tutorial. Update it for any changes. Rehearse once together on the presentation laptop; everyone explains their piece. Skip appointments, logins, online payments and extra reports unless required.
+Use the app README as the starting functional guide and tutorial. Update it for any changes. Skip appointments, logins, online payments and extra reports unless required.
 
 **Course** contains the original assignment files. Drafts and sample code were AI-assisted.
