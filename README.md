@@ -12,7 +12,7 @@ Report 1 Due: **Oct. 6th**  Final Due: **Dec. 1st**
 | **Interview Manager** | Do the interview, get the signature, and fill report sections 1-4 from the answers. | Mae Beeman
 | **Database Manager** | Check the diagram and schema against the answers. Fix any differences; help connect/test billing and queries. | tbd
 | **Application Manager** | Run the sample, provide 2-3 screenshots, and fix anything needed for the agreed workflow/software. | tbd
-| **Report Manager** | Combine the pieces, fill dates and the real contribution log, check the required sections, and submit. For the final, collect the manual and slides. | tbd
+| **Report Manager** | Combine the pieces, fill dates and the real contribution log, check the required sections, and submit. For the final, collect the manual and slides. | Dashaun Townsend
 
 Pick a role. Everyone checks their own section and explains their part in the presentation.
 
