@@ -260,7 +260,8 @@ END;
 CREATE TRIGGER labor_line_delete_guard BEFORE DELETE ON labor_line
 WHEN (SELECT status FROM repair_order WHERE order_id = OLD.order_id) NOT IN (
   'OPEN',
-  'IN_PROGRESS'
+  'IN_PROGRESS',
+  'WAITING_FOR_PARTS'
 )
 BEGIN
   SELECT RAISE(ABORT, 'Final order lines cannot be removed');
@@ -281,7 +282,8 @@ END;
 CREATE TRIGGER part_line_delete_guard BEFORE DELETE ON part_line
 WHEN (SELECT status FROM repair_order WHERE order_id = OLD.order_id) NOT IN (
   'OPEN',
-  'IN_PROGRESS'
+  'IN_PROGRESS',
+  'WAITING_FOR_PARTS'
 )
 BEGIN
   SELECT RAISE(ABORT, 'Final order lines cannot be removed');

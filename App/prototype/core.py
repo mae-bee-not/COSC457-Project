@@ -76,7 +76,7 @@ def initialize(path):
 
 def editable(c, order_id):
     r = one(c, "SELECT * FROM repair_order WHERE order_id=?", (order_id,))
-    if r["status"] not in ("OPEN", "IN_PROGRESS"):
+    if r["status"] not in ("OPEN", "IN_PROGRESS", "WAITING_FOR_PARTS"):
         raise ValueError("This order is final.")
     return r
 
@@ -95,7 +95,7 @@ def totals(c, order_id):
 
 CATALOG = {
     "customer": ("name", "phone", "email", "active"),
-    "vehicle": ("customer_id", "vin", "model_year", "make", "model"),
+    "vehicle": ("customer_id", "vin", "license_plate", "model_year", "make", "model"),
     "employee": ("name", "role", "active"),
     "service": ("name", "rate_cents", "active"),
     "part": ("part_number", "name", "price_cents", "reorder_level", "active"),
@@ -145,15 +145,52 @@ def create_order(c, vehicle_id, complaint, odometer):
         ).lastrowid
 
 
-def update_order(c, order_id, diagnosis, authorization_note):
+def update_order(c, order_id, diagnosis, authorization_note, approval_name):
     with transaction(c):
         editable(c, order_id)
+
+        # Validate the authorization details.
         note = required(authorization_note)
+        name = required(approval_name)
+
+        # Save the approval name and automatically record the UTC time.
+        # Preserve the current status unless the order is still OPEN.
         c.execute(
-            "UPDATE repair_order SET diagnosis=?,authorization_note=?,status='IN_PROGRESS' WHERE order_id=?",
-            (required(diagnosis), note, order_id),
+            """
+            UPDATE repair_order
+            SET diagnosis=?,
+                authorization_note=?,
+                approval_name=?,
+                approved_at=strftime('%Y-%m-%dT%H:%M:%SZ', 'now'),
+                status=CASE
+                    WHEN status='OPEN' THEN 'IN_PROGRESS'
+                    ELSE status
+                END
+            WHERE order_id=?
+            """,
+            (required(diagnosis), note, name, order_id),
         )
 
+def set_order_status(c, order_id, new_status):
+    # Define the allowed transitions between repair statuses.
+    allowed = {
+        "IN_PROGRESS": "WAITING_FOR_PARTS",
+        "WAITING_FOR_PARTS": "IN_PROGRESS",
+    }
+
+    with transaction(c):
+        # Retrieve the current repair order.
+        r = editable(c, order_id)
+
+        # Prevent invalid status changes.
+        if allowed.get(r["status"]) != new_status or new_status not in allowed:
+            raise ValueError("Invalid repair status transition.")
+
+        # Save the new repair status in the database.
+        c.execute(
+            "UPDATE repair_order SET status=? WHERE order_id=?",
+            (new_status, order_id),
+        )
 
 def add_labor(c, order_id, service_id, mechanic_id, hours):
     h = amount(hours)
@@ -240,12 +277,18 @@ def cancel_order(c, order_id):
         )
 
 
-def finalize(c, order_id, tax):
+def finalize(c, order_id, tax, shop_supplies="0"):
     tax_cents = amount(tax)
+
+    # Convert the shop supplies charge from dollars to cents.
+    shop_supplies_cents = amount(shop_supplies)
     with transaction(c):
         r = editable(c, order_id)
         if r["status"] != "IN_PROGRESS":
             raise ValueError("Record diagnosis and authorization first.")
+                # Ensure customer approval is recorded before invoicing.
+        if not r["approval_name"].strip() or not r["approved_at"]:
+            raise ValueError("Record the approval name and time before invoicing.")
         labor, parts = totals(c, order_id)
         count = c.execute(
             "SELECT (SELECT COUNT(*) FROM labor_line WHERE order_id=?)+(SELECT COUNT(*) FROM part_line WHERE order_id=?)",
@@ -260,18 +303,25 @@ def finalize(c, order_id, tax):
         )
         v = one(c, "SELECT * FROM vehicle WHERE vehicle_id=?", (r["vehicle_id"],))
         inv = c.execute(
-            "INSERT INTO invoice(order_id,customer_label,vehicle_label,labor_cents,parts_cents,tax_cents) VALUES(?,?,?,?,?,?)",
+            "INSERT INTO invoice(order_id,customer_label,vehicle_label,labor_cents,parts_cents,shop_supplies_cents,tax_cents) VALUES(?,?,?,?,?,?,?)",
             (
                 order_id,
                 cust["name"],
                 f"{v['model_year']} {v['make']} {v['model']} | {v['vin']}",
                 labor,
                 parts,
+                shop_supplies_cents,
                 tax_cents,
             ),
         ).lastrowid
+                # A repair is ready for pickup after its invoice is created.
+                # A zero-dollar invoice requires no payment.
+        total = labor + parts + shop_supplies_cents + tax_cents
+        status = "COMPLETED" if total == 0 else "READY_FOR_PICKUP"
+
         c.execute(
-            "UPDATE repair_order SET status='COMPLETED' WHERE order_id=?", (order_id,)
+            "UPDATE repair_order SET status=? WHERE order_id=?",
+            (status, order_id),
         )
         return inv
 
@@ -293,10 +343,21 @@ def pay(c, invoice_id, value, method, request_key=None):
             ):
                 raise ValueError("Payment request key reused with different values.")
             return prior["payment_id"]
-        return c.execute(
+                # Record the customer's full payment.
+        payment_id = c.execute(
             "INSERT INTO payment(invoice_id,amount_cents,method,request_key) VALUES(?,?,?,?)",
             (invoice_id, cents, method, key),
         ).lastrowid
+
+        # Mark the repair order as completed after payment.
+        c.execute(
+            "UPDATE repair_order SET status='COMPLETED' "
+            "WHERE order_id=(SELECT order_id FROM invoice WHERE invoice_id=?) "
+            "AND status='READY_FOR_PICKUP'",
+            (invoice_id,),
+        )
+
+        return payment_id
 
 
 def seed(c):
@@ -321,15 +382,23 @@ def seed(c):
             active=1,
         ),
     )
-    for cust, vin, year, make, model in [
-        (a, "DEMO-VEHICLE-001", 2020, "Demo", "Sedan"),
-        (a, "DEMO-VEHICLE-002", 2022, "Demo", "Wagon"),
-        (b, "DEMO-VEHICLE-003", 2018, "Demo", "Hatch"),
+        # Create sample vehicles with fictional license plates.
+    for cust, vin, plate, year, make, model in [
+        (a, "DEMO-VEHICLE-001", "DEMO001", 2020, "Demo", "Sedan"),
+        (a, "DEMO-VEHICLE-002", "DEMO002", 2022, "Demo", "Wagon"),
+        (b, "DEMO-VEHICLE-003", "DEMO003", 2018, "Demo", "Hatch"),
     ]:
         save_record(
             c,
             "vehicle",
-            dict(customer_id=cust, vin=vin, model_year=year, make=make, model=model),
+            dict(
+                customer_id=cust,
+                vin=vin,
+                license_plate=plate,
+                model_year=year,
+                make=make,
+                model=model,
+            ),
         )
     save_record(
         c, "employee", dict(name="DEMO Morgan Mechanic", role="MECHANIC", active=1)
@@ -368,18 +437,82 @@ def seed(c):
     adjust_stock(c, 1, 10, "DEMO opening inventory")
     adjust_stock(c, 2, 1, "DEMO opening inventory")
     o = create_order(c, 1, "DEMO brake concern", 45000)
+        # Record fictional customer approval for the sample repair.
     update_order(
-        c, o, "DEMO inspection complete", "DEMO authorization for teaching example"
+        c,
+        o,
+        "DEMO inspection complete",
+        "DEMO authorization for teaching example",
+        "DEMO Avery Sample",
     )
     add_labor(c, o, 1, 1, "1.50")
     add_part(c, o, 1, 2)
     i = finalize(c, o, "0")
-    pay(c, i, "100", "CASH", "demo-initial-payment")
+
+    # Retrieve the outstanding invoice balance.
+    balance = one(
+        c,
+        "SELECT balance_cents FROM invoice_balance WHERE invoice_id=?",
+        (i,)
+    )["balance_cents"]
+
+    # Convert cents to dollars and record the full payment.
+    pay(c, i, Decimal(balance) / 100, "CASH", "demo-initial-payment")
     create_order(c, 3, "DEMO routine inspection", 60000)
 
 
+# Base query used for repair history reports.
+HISTORY_SQL = """
+SELECT c.phone, c.name AS bill_to,
+       v.vin, v.license_plate,
+       o.order_id, o.opened_at, o.odometer,
+       o.complaint, o.status,
+       i.total_cents, i.balance_cents
+FROM repair_order o
+JOIN customer c ON c.customer_id = o.bill_to_customer_id
+JOIN vehicle v ON v.vehicle_id = o.vehicle_id
+LEFT JOIN invoice_balance i ON i.order_id = o.order_id
+"""
+
+HISTORY_ORDER = " ORDER BY o.opened_at DESC, o.order_id DESC"
+
+# SQL queries used by the application's reports.
 REPORTS = {
-    "Open work": "SELECT o.order_id,c.name AS bill_to,v.vin,o.opened_at,o.status,o.complaint FROM repair_order o JOIN customer c ON c.customer_id=o.bill_to_customer_id JOIN vehicle v ON v.vehicle_id=o.vehicle_id WHERE o.status IN ('OPEN','IN_PROGRESS') ORDER BY o.opened_at,o.order_id",
-    "Vehicle history": "SELECT v.vin,o.order_id,o.opened_at,o.odometer,o.complaint,o.status,i.total_cents,i.balance_cents FROM vehicle v JOIN repair_order o ON o.vehicle_id=v.vehicle_id LEFT JOIN invoice_balance i ON i.order_id=o.order_id ORDER BY v.vin,o.opened_at DESC,o.order_id DESC",
-    "Unpaid invoices": "SELECT invoice_id,order_id,customer_label,issued_at,total_cents,paid_cents,balance_cents FROM invoice_balance WHERE balance_cents>0 ORDER BY issued_at",
+    "Open work": """
+        SELECT o.order_id, c.name AS bill_to,
+               v.vin, v.license_plate,
+               o.opened_at, o.status, o.complaint
+        FROM repair_order o
+        JOIN customer c ON c.customer_id = o.bill_to_customer_id
+        JOIN vehicle v ON v.vehicle_id = o.vehicle_id
+        WHERE o.status IN (
+            'OPEN',
+            'IN_PROGRESS',
+            'WAITING_FOR_PARTS',
+            'READY_FOR_PICKUP'
+        )
+        ORDER BY o.opened_at, o.order_id
+    """,
+
+    "Vehicle history": HISTORY_SQL + HISTORY_ORDER,
+
+    "Unpaid invoices": """
+        SELECT invoice_id, order_id, customer_label,
+               issued_at, total_cents, paid_cents,
+               balance_cents
+        FROM invoice_balance
+        WHERE balance_cents > 0
+        ORDER BY issued_at
+    """,
 }
+
+
+# Retrieve repair history using a customer's phone number.
+def history_by_phone(c, phone):
+    phone = required(phone)
+
+    # Bind the phone number as a parameter instead of SQL text.
+    return list(c.execute(
+        HISTORY_SQL + " WHERE c.phone = :phone" + HISTORY_ORDER,
+        {"phone": phone},
+    ))
